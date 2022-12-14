@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { AjouterRegionComponent } from './ajouter-region/ajouter-region.component';
+import { MenuNavbarComponent } from './menu-navbar/menu-navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnexionComponent,
-    AjouterRegionComponent
+    AjouterRegionComponent,
+    MenuNavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
