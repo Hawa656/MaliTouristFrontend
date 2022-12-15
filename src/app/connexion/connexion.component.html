@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="text mt-4">
-                                <a href="" style="color: #ECBE23; ">
+                                <a href="" style="color: #ECBE23; " data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <p class="text-center" >Créer un compte ?</p>
                                 </a>
                             </div>
@@ -69,3 +69,38 @@
         </div>
     </div>
 </div>
+
+<!-- ----------------------pop up inscription------------------------ -->
+<!-- ==================================Pour inserer le pop up ========================
+===================================================================================-->
+
+<!-- Aller sur la documentation officiel de boostrap puis y copier le code qui se trouve dans modal(que tu tape dans la barre de recherche)
+dans mon cas le pop up doit apparaitre lorsque on clic sur: créer un compte? donc copier le:
+data-bs-toggle="modal" data-bs-target="#exampleModal qui se trouve dans la balise button et le coller dans la balise a -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Créer un compte ?
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="row">
+    <div class="col-12 col-md-4 " >
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-center textPop" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Confirmer</button>
+                  <button type="button" class="btn btn-primary">Annuler</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>

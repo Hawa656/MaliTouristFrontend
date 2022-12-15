@@ -14,10 +14,14 @@ export class MenuNavbarComponent implements OnInit {
 
     window.addEventListener('scroll', function(){
         if (window.pageYOffset > 100) {
-            nav!.classList.add('bg-dark');
+  
+            nav!.classList.add('bgscrollBar');
+            nav!.style.backgroundColor='#000000';
+            nav!.style.opacity='0.8'
             
         }else{
-            nav!.classList.remove('bg-dark')
+            nav!.classList.remove('bgscrollBar');
+            nav!.style.backgroundColor='transparent';
         }
     })
   }

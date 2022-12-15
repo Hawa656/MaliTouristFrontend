@@ -7,6 +7,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { AjouterRegionComponent } from './ajouter-region/ajouter-region.component';
 import { MenuNavbarComponent } from './menu-navbar/menu-navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     ConnexionComponent,
     AjouterRegionComponent,
     MenuNavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,

@@ -1,51 +1,64 @@
-<div class="container" >
-    <form class="py-5">
-        <div class="row">
-            <div class="form-group col-12 col-md-6">
-            <label for="Nom">Nom</label>
-            <input type="text" class="form-control" id="inputNom" placeholder="Nom">
-          </div>
-          <div class="form-group col-12 col-md-6">
-            <label for="inputPassword4">Prenom</label>
-            <input type="text" class="form-control" id="inputPrenom" placeholder="Prenom">
-          </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-12 col-md-6">
-            <label for="Nom">Nom</label>
-            <input type="text" class="form-control" id="inputNom" placeholder="Nom">
-          </div>
-          <div class="form-group col-12 col-md-6">
-            <label for="inputPassword4">Prenom</label>
-            <input type="text" class="form-control" id="inputPrenom" placeholder="Prenom">
-          </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-12 col-md-6">
-            <label for="Nom">Nom</label>
-            <input type="text" class="form-control" id="inputNom" placeholder="Nom">
-          </div>
-          <div class="form-group col-12 col-md-6">
-            <label for="inputPassword4">Prenom</label>
-            <input type="text" class="form-control" id="inputPrenom" placeholder="Prenom">
-          </div>
-        </div>
+<app-menu-navbar></app-menu-navbar>
 
-       
-        <div class="form-group">
-            <label for="message">message</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="message"></textarea>
-          </div>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="form-group">
-                    <label for="inputAddress">Objet</label>
-                    <input type="text" class="form-control" id="inputObjet" placeholder="Objet">
-                  </div>
+<div class="container margeContainer">
+  <div class="col-12 offset-md-2 col-md-8">
+    <div class="tout">
+      <div class="row">
+        <form action="" method="post">
+          <h2 class="text-center pb-4">Ajouter une région</h2>
+          <fieldset>
+            <div class="row mb-3">
+              <div class="form-group col-12 col-md-6 ">
+                <label for="NomRegion">Nom de la région</label>
+                <input type="text" class="form-control" id="inputNomRegion" placeholder="">
+              </div>
+              <div class="form-group col-12 col-md-6 ">
+                <label for="NomPays">Nom du Pays</label>
+                <input type="text" class="form-control" id="inputNomPays" placeholder="">
+              </div>  
             </div>
-            <div class="col-12 col-md-6"></div>
-        </div>  
-          <button type="submit" class="btn btn-primary  Connexion text-white align-items-center">Envoyer</button> 
-               
-    </form>    
+            <div class="row mb-3">
+              <div class="form-group col-12 col-md-6 ">
+                <label for="DomaineActivite">Domaine d’activité</label>
+                <input type="text" class="form-control" id="inputDomaineActivite" placeholder="">
+              </div>
+              <div class="form-group col-12 col-md-6 ">
+                <label for="LangueMajoritairementParlée">Langue majoritairement parlée</label>
+                <input type="text" class="form-control" id="inputLangueMajoritairementParlée" placeholder="">
+              </div>  
+            </div>
+            <div class="row mb-3">
+              <div class="form-group col-12 col-md-6 ">
+                <label for="ChiffresPopulation">Chiffres de la population</label>
+                <input type="text" class="form-control" id="inputChiffresPopulation" placeholder="">
+              </div>
+              <div class="form-group col-12 col-md-6 ">
+                <label for="Superficie">Superficie</label>
+                <input type="text" class="form-control" id="inputSuperficie" placeholder="">
+              </div>  
+            </div>
+            <div class="row mb-3">
+              <div class="form-group">
+                <label for="Description">Description</label>
+                <textarea class="form-control" id="Description" rows="3" placeholder=""></textarea>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="form-group col-12 col-md-6 ">
+                <label for="ChiffresPopulation">Photos</label>
+                <input type="text" class="form-control" id="inputChiffresPopulation" placeholder="">
+              </div>
+              <div class="form-group col-12 col-md-6 mb-3">
+                <label for="Superficie">Sites Touristiques</label>
+                <input type="text" class="form-control" id="inputSuperficie" placeholder="">
+              </div>  
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 connexion text-white align-items-center">Envoyer</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
+
+<app-footer></app-footer>
