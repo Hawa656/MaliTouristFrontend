@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-navbar',
@@ -7,12 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    console.log("MOn url: " + this.router.url);
+
+    //if(this.route.snapshot)
+
     var nav = document.querySelector('nav');
 
-    window.addEventListener('scroll', function(){
+    if(this.router.url == "/accueil"){
+      window.addEventListener('scroll', function(){
         if (window.pageYOffset > 100) {
   
             nav!.classList.add('bgscrollBar');
@@ -24,6 +33,12 @@ export class MenuNavbarComponent implements OnInit {
             nav!.style.backgroundColor='transparent';
         }
     })
+    }else{
+      var nav = document.querySelector('nav');
+      nav!.style.backgroundColor='#000000';
+
+    }
+    
   }
 
 }

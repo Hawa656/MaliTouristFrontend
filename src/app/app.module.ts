@@ -8,6 +8,8 @@ import { AjouterRegionComponent } from './ajouter-region/ajouter-region.componen
 import { MenuNavbarComponent } from './menu-navbar/menu-navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { DetailsRegionComponent } from './details-region/details-region.component';
+import { AdminDashbordComponent } from './admin-dashbord/admin-dashbord.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AccueilComponent } from './accueil/accueil.component';
     AjouterRegionComponent,
     MenuNavbarComponent,
     FooterComponent,
-    AccueilComponent
+    AccueilComponent,
+    DetailsRegionComponent,
+    AdminDashbordComponent
   ],
   imports: [
     BrowserModule,

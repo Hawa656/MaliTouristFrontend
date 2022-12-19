@@ -90,12 +90,14 @@
     color: white;
 }
 .textPop{
-    // position: relative;
-    // display: flex;
-    // text-align: center;
-    // justify-content: center;
-    color: red;
+    color: black;
     margin-left: 35%;
-    // margin-right: auto;
 }
-
+.popUp,
+.button{
+    background-color: #50AAAA;
+}
+.button2
+{
+    background-color: #ECBE23;
+}

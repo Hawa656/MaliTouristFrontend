@@ -1,4 +1,4 @@
-<div class="container mt-5 text-align-items ">
+<div class="container mt-5 text-align-items mb-5">
     <div class="affacer ">
         <div class="row borderContour">
             <!-- -----------------partie gauche------------------------ -->
@@ -18,7 +18,7 @@
             <div class="col-12 col-md-6">
                 <div class="row py-3 mx-2">
                     <div class="allRight">
-                        <h1 class="mb-3 pt-3 text-uppercase " >Connexion</h1>
+                        <h1 class="mb-3 pt-3 text-uppercase ">Connexion</h1>
                         <!-- -----------------formulaire------------------------ -->
                         <form>
                             <div class="col-12 col-md-12">
@@ -34,8 +34,9 @@
                                 </div>
                             </div>
                             <div class="text mt-4">
-                                <a href="" style="color: #ECBE23; " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <p class="text-center" >Créer un compte ?</p>
+                                <a href="" style="color: #ECBE23; " data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <p class="text-center">Créer un compte ?</p>
                                 </a>
                             </div>
                             <div class="col-12 col-md-12 ">
@@ -81,26 +82,50 @@ data-bs-toggle="modal" data-bs-target="#exampleModal qui se trouve dans la balis
 <!-- <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Créer un compte ?
   </button> -->
-  
-  <!-- Modal -->
-  <div class="row">
-    <div class="col-12 col-md-4 " >
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 text-center textPop" id="exampleModalLabel">Modal title</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+<!-- Modal -->
+<div class="container">
+    <div class="popUp">
+        <div class="row">
+            <div class="col-12 col-md-12 ">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-center textPop" id="exampleModalLabel">Inscription</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 mb-3">
+                                            <label for="Nom">Pseudo</label>
+                                            <input type="text" class="form-control" id="inputNom"
+                                                placeholder="Entrer votre pseudo">
+                                        </div>
+                                        <div class="col-12 col-md-12 mb-3">
+                                            <label for="Nom">Mot de passe</label>
+                                            <input type="password" class="form-control" id="inputNom"
+                                                placeholder="Entrer votre mot de passe">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="">
+                                    <button type="button" class="btn btn-secondary button"
+                                        data-bs-dismiss="modal">Confirmer</button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="btn btn-primary button2">Annuler</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Confirmer</button>
-                  <button type="button" class="btn btn-primary">Annuler</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
     </div>
-  </div>
+</div>
